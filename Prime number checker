@@ -1,0 +1,24 @@
+# code for checking whether a number is prime number or not.
+def prime_checker(number):
+    l = number
+    k = []
+    while l>0:
+        if  number%l==0:
+            k.append(1)
+        else:
+            k.append(0)
+           
+        l = l-1
+    c = k.count(1)    
+
+    if c==2:
+        print("It's a prime number.")
+    elif c==1:
+        print("It's neither a prime nor a composite.")
+    else:
+        print("It's not a prime number.")            
+
+
+
+n = int(input("Check this number: "))
+prime_checker(number=n)
